@@ -1,0 +1,17 @@
+#pragma once
+
+#include <iostream>
+
+using std::string;
+using std::cout;
+using std::endl;
+
+class Name {
+private:
+
+public:
+	Name() {}
+	Name(const Name &other) {*this = other;}
+	virtual ~Name() {}
+	Name &operator=(const Name &other) {return *this;}
+};
